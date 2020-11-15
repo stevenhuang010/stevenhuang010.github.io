@@ -1,0 +1,72 @@
+#about-me {
+    height: 100vh;
+    background: #EBEBEB;
+    position: relative;
+}
+
+.content {
+    position: relative;
+    height: 100%;
+}
+
+h1 {
+    position: absolute;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 32pt;
+    font-weight: 600;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 2%;
+}
+
+.graphic-container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    top: 27%;
+    width: 32%;
+    opacity: 0;
+}
+
+#cs-graphics  {
+    left: 10%;
+}
+
+#life-graphics  {
+    right: 17%;
+}
+
+#boba  {
+    margin-bottom: 30px;
+}
+
+#about-me p {
+    position: absolute;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16pt;
+    width: 32%;
+    line-height: 1.4;
+    top: 50%;
+    opacity: 0;
+}
+
+#cs-description {
+    left: 10%;
+}
+
+#life-description {
+    right: 12%;
+}
+
+#dividing-line {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 40%;
+    top: 53%;
+    background: black;
+}

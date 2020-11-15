@@ -2,10 +2,6 @@
     position: relative;
 }
 
-.content {
-    position: relative;
-}
-
 h1 {
     position: absolute;
     font-family: 'Quicksand', sans-serif;

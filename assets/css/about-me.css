@@ -4,21 +4,6 @@
     position: relative;
 }
 
-.content {
-    position: relative;
-    height: 100%;
-}
-
-h1 {
-    position: absolute;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 32pt;
-    font-weight: 600;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 2%;
-}
-
 .graphic-container {
     position: absolute;
     display: flex;

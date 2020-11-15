@@ -1,3 +1,6 @@
+document.getElementById("about-me").style.height;
+console.log(document.getElementById("about-me").style.height);
+
 /*When arrow button is clicked for project container, it shows the text description*/ 
 let projectImages = document.getElementsByClassName("project-image");
 let arrows = document.getElementsByClassName("arrow");

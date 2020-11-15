@@ -11,7 +11,7 @@
     justify-content: space-between;
     align-items: center;
     height: 90px;
-    top: 27%;
+    top: 169px;
     width: 32%;
     opacity: 0;
 }
@@ -34,7 +34,7 @@
     font-size: 16pt;
     width: 32%;
     line-height: 1.4;
-    top: 50%;
+    top: 312px;
     opacity: 0;
 }
 
@@ -51,7 +51,7 @@
     left: 50%;
     transform: translateX(-50%);
     width: 1px;
-    height: 40%;
-    top: 53%;
+    height: 250px;
+    top: 331px;
     background: black;
 }

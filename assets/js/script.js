@@ -234,23 +234,24 @@ function fadeOutUp(listNumber) {
         }
     );
 }
-/*
-//for reculating height of box whenever resize occurs
+
+//for reculating height of box whenever resize occurs for abs positioned elements, may omit if use relative positioning in 1-col layout,
+//good for 1 time use when seeing if text too big for vh though
 recalculateHeight();
 window.addEventListener('resize', recalculateHeight);
 
 function recalculateHeight() {
     let firstHeader = document.querySelector("h1");
     let finalPMiddle = document.getElementById("cs-description");
-    let containerHeight = absoluteYDistFromTopBottom(finalPMiddle) - absoluteYDistFromTop(firstHeader) + 80;
+    let containerHeight = bottomAbsoluteYDistFromTop(finalPMiddle) - topAbsoluteYDistFromTop(firstHeader) + 80;
     let middlePage = document.getElementById("about-me");
     middlePage.style.height = containerHeight + "px";
 }
 
-function absoluteYDistFromTop(object) {
+function topAbsoluteYDistFromTop(object) {
     return object.getBoundingClientRect().top - body.getBoundingClientRect().top;
 }
 
-function absoluteYDistFromTopBottom(object) {
+function bottomAbsoluteYDistFromTop(object) {
     return object.getBoundingClientRect().bottom - body.getBoundingClientRect().top;
-}*/
+}

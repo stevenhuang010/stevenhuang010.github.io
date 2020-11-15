@@ -1,6 +1,3 @@
-document.getElementById("about-me").style.height;
-console.log(document.getElementById("about-me").style.height);
-
 /*When arrow button is clicked for project container, it shows the text description*/ 
 let projectImages = document.getElementsByClassName("project-image");
 let arrows = document.getElementsByClassName("arrow");
@@ -155,6 +152,8 @@ function checkScroll() {
 function calculateScrollFromTop(container) {
     return container.getBoundingClientRect().top - body.getBoundingClientRect().top - 0.8 * viewportHeight;
 }
+
+
 /*
 greater constant, opens up earlier and fades later
 */
@@ -235,3 +234,23 @@ function fadeOutUp(listNumber) {
         }
     );
 }
+/*
+//for reculating height of box whenever resize occurs
+recalculateHeight();
+window.addEventListener('resize', recalculateHeight);
+
+function recalculateHeight() {
+    let firstHeader = document.querySelector("h1");
+    let finalPMiddle = document.getElementById("cs-description");
+    let containerHeight = absoluteYDistFromTopBottom(finalPMiddle) - absoluteYDistFromTop(firstHeader) + 80;
+    let middlePage = document.getElementById("about-me");
+    middlePage.style.height = containerHeight + "px";
+}
+
+function absoluteYDistFromTop(object) {
+    return object.getBoundingClientRect().top - body.getBoundingClientRect().top;
+}
+
+function absoluteYDistFromTopBottom(object) {
+    return object.getBoundingClientRect().bottom - body.getBoundingClientRect().top;
+}*/

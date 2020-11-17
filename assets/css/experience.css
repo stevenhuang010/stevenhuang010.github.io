@@ -27,24 +27,26 @@ h3 {
     margin: 0px;
 }
 
-#work-line {
-    position: absolute;
-    left: 7%;
-    top: 140px;
+.section-heading {
+    position: relative;
+    margin-left: 7%;
+    margin-top: 35px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-#work-text {
-    position: absolute;
-    left: 8.2%;
-    top: 140px;
+.section-text-name {
+    margin-left: 1.2%;
 }
 
 .work-container {
-    position: absolute;
+    position: relative;
     width: 86%;
-    top: 210px;
-    left: 7%;
-    height: 150px;
+    margin-top: 40px;
+    margin-left: 7%;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background: #EBEBEB;
     display: flex;
     flex-direction: row;
@@ -60,7 +62,7 @@ h3 {
 }
 
 .logo-description-dividing-line {
-    height: 80%;
+    height: 100px;
     width: 2px;
     background: #5b5f63;
     margin-right: 3%;
@@ -96,7 +98,7 @@ h6 {
 }
 
 .job-responsibilities {
-    height: 60%;
+    padding-top: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -110,30 +112,19 @@ h6 {
     margin: 0px;
 }
 
-#coursework-line {
-    position: absolute;
-    left: 7%;
-    top: 410px;
-}
-
-#coursework-text {
-    position: absolute;
-    left: 8.2%;
-    top: 410px;
-}
-
 .text-column {
     background: #EBEBEB;
     width: 40%;
 }
 
 #coursework-container {
-    position: absolute;
-    left: 7%;
-    top: 480px;
+    position: relative;
+    margin-left: 7%;
+    margin-top: 40px;
     padding-bottom: 10px;
     padding-top: 5px;
     opacity: 0;
+    
 }
 
 #coursework-container p, #languages-container p {
@@ -148,36 +139,23 @@ h6 {
 
 #languages-line {
     position: absolute;
-    left: 53%;
-    top: 410px;
+    left: 49.5%;
+    top: -267px;
 }
 
 #languages-text {
     position: absolute;
-    left: 54.2%;
-    top: 410px;
+    left: 50.7%;
+    top: -267px;
 }
-/*63 px hardcode to be equal*/
+/*5 px hardcode to be equal*/
 #languages-container {
     position: absolute;
     left: 53%;
     top: 480px;
     padding-top: 5px;
-    padding-bottom: 10px;
-    padding-bottom: 63px;
+    padding-bottom: 5px;
     opacity: 0;
-}
-
-#projects-line {
-    position: absolute;
-    left: 7%;
-    top: 685px;
-}
-
-#projects-text {
-    position: absolute;
-    left: 8.2%;
-    top: 685px;
 }
 
 .project-container {
@@ -197,15 +175,13 @@ h6 {
 
 
 #pathfinder-container {
-    position: absolute;
-    left: 7%;
-    top: 755px;
+    position: relative;
+    margin-left: 7%;
 }
 
 #sudoku-container {
-    position: absolute;
-    left: 53%;
-    top: 755px;
+    position: relative;
+    margin-left: 6%;
 }
 
 .project-name {
@@ -291,4 +267,58 @@ h6 {
     transform: rotateX(180deg);
     transition-property: transform;
     transition-duration: 1s;
+}
+
+.project-flex  {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 32px;
+    width: 100%;
+}
+
+.second.section-line {
+    margin-left: 1.2%;
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .work-container {
+        flex-direction: column;
+    }
+    
+    .section-line {
+        width: 30%;
+        height: 1px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .section-line.second {
+        margin-left: 5%;
+        margin-right: 5%;
+        display: block;
+    }
+
+    .section-heading {
+        display: flex;
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    #coursework-container {
+        margin: 0 auto;
+    }
+
+    #pathfinder-container {
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    #sudoku-container {
+        margin-left: 0px;
+    }
+    .project-flex {
+        flex-direction: column;
+    }
 }

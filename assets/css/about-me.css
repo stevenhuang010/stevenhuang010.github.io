@@ -5,22 +5,24 @@
 }
 
 .graphic-container {
-    position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     height: 90px;
-    top: 169px;
     width: 32%;
     opacity: 0;
 }
 
 #cs-graphics  {
-    left: 10%;
+    position: relative;
+    margin-top: 66px;
+    margin-left: 10%;
 }
 
 #life-graphics  {
+    position: absolute;
+    top: 169px;
     right: 17%;
 }
 
@@ -29,20 +31,22 @@
 }
 
 #about-me p {
-    position: absolute;
     font-family: 'Quicksand', sans-serif;
     font-size: 16pt;
     width: 32%;
     line-height: 1.4;
-    top: 312px;
     opacity: 0;
 }
 
 #cs-description {
-    left: 10%;
+    position: relative;
+    margin-left: 10%;
+    margin-top: 70px;
 }
 
 #life-description {
+    position: absolute;
+    top: 312px;
     right: 12%;
 }
 

@@ -255,3 +255,7 @@ function topAbsoluteYDistFromTop(object) {
 function bottomAbsoluteYDistFromTop(object) {
     return object.getBoundingClientRect().bottom - body.getBoundingClientRect().top;
 }
+
+let courseworkContainer = document.getElementById("coursework-container");
+let cCHeight = bottomAbsoluteYDistFromTop(courseworkContainer) - topAbsoluteYDistFromTop(courseworkContainer);
+document.getElementById("languages-container").style.height = courseworkContainer.clientHeight + "px";

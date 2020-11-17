@@ -140,13 +140,13 @@ h6 {
 #languages-line {
     position: absolute;
     left: 49.5%;
-    top: -267px;
+    top: -270px;
 }
 
 #languages-text {
     position: absolute;
     left: 50.7%;
-    top: -267px;
+    top: -270px;
 }
 /*5 px hardcode to be equal*/
 #languages-container {
@@ -154,7 +154,7 @@ h6 {
     left: 53%;
     top: 480px;
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 65px;
     opacity: 0;
 }
 

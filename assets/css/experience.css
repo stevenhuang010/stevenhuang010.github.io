@@ -154,7 +154,7 @@ h6 {
     left: 53%;
     top: 480px;
     padding-top: 5px;
-    padding-bottom: 65px;
+    padding-bottom: 10px;
     opacity: 0;
 }
 
@@ -330,4 +330,12 @@ h6 {
     .section-text-name {
         white-space: nowrap;
     }
+
+    .hidden {
+        display: none;
+    }
+}
+
+.hidden {
+    opacity: 0;
 }

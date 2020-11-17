@@ -2,6 +2,7 @@
     min-height: 100vh;
     background: #EBEBEB;
     position: relative;
+    overflow: hidden;
 }
 
 .graphic-container {
@@ -23,7 +24,7 @@
 #life-graphics  {
     position: absolute;
     top: 169px;
-    right: 17%;
+    right: 15%;
 }
 
 #boba  {
@@ -36,6 +37,8 @@
     width: 32%;
     line-height: 1.4;
     opacity: 0;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 #cs-description {
@@ -46,7 +49,7 @@
 
 #life-description {
     position: absolute;
-    top: 312px;
+    top: 310px;
     right: 12%;
 }
 
@@ -58,4 +61,76 @@
     height: 250px;
     top: 331px;
     background: black;
+}
+
+@media screen and (max-width: 1000px) {
+    #life-graphics {
+        right: 18%;
+    }
+
+    #cs-graphics {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    #cs-graphics  {
+        position: relative;
+        margin: 0 auto;
+        width: 50%;
+        margin-top: 66px;
+    }
+
+    #life-graphics {
+        position: relative;
+        margin-left: 18%;
+        right: 0%;
+        top: 0%;
+        left: 0%;
+        width: 55%;
+        padding-top: 60px;
+    }
+
+    #about-me p {
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 40px;
+    }
+
+    #life-description {
+        position: relative;
+        right: 0%;
+        top: 0%;
+    }
+
+    #dividing-line {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #life-graphics {
+        
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #cs-graphics {
+        width: 80%;
+    }
+    
+    #about-me p {
+        font-size: 14pt;
+    }
+    #life-graphics {
+        width: 90%;
+        margin-left: -30px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    #life-graphics  {
+        width: 100%;
+    }
 }

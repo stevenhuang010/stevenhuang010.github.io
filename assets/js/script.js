@@ -234,7 +234,7 @@ function fadeOutUp(listNumber) {
         }
     );
 }
-/*
+
 //for reculating height of box whenever resize occurs for abs positioned elements, may omit if use relative positioning in 1-col layout,
 //good for 1 time use when seeing if text too big for vh though
 recalculateHeight();
@@ -242,10 +242,22 @@ window.addEventListener('resize', recalculateHeight);
 
 function recalculateHeight() {
     let firstHeader = document.querySelector("h1");
-    let finalPMiddle = document.getElementById("cs-description");
-    let containerHeight = bottomAbsoluteYDistFromTop(finalPMiddle) - topAbsoluteYDistFromTop(firstHeader) + 80;
+    let finalP = getLowerElement(document.getElementById("cs-description"), document.getElementById("life-description"));
+    let containerHeight = bottomAbsoluteYDistFromTop(finalP) - topAbsoluteYDistFromTop(firstHeader) + 80;
     let middlePage = document.getElementById("about-me");
     middlePage.style.height = containerHeight + "px";
+
+    //adjust height of line
+    let csDescription = document.getElementById("cs-description");
+    let line = document.getElementById("dividing-line");
+    line.style.height = csDescription.clientHeight + 10 + "px";
+}
+
+function getLowerElement(object1, object2) {
+    if (bottomAbsoluteYDistFromTop(object1) > bottomAbsoluteYDistFromTop(object2)) {
+        return object1;
+    }
+    return object2;
 }
 
 function topAbsoluteYDistFromTop(object) {
@@ -255,7 +267,7 @@ function topAbsoluteYDistFromTop(object) {
 function bottomAbsoluteYDistFromTop(object) {
     return object.getBoundingClientRect().bottom - body.getBoundingClientRect().top;
 }
-*/
+
 //hamburger icon
 let hamburgerIcon = document.getElementById("hamburger-icon");
 let menu = document.querySelector(".menu");
@@ -283,3 +295,4 @@ homeLink.onclick = closeMenu;
 aboutLink.onclick = closeMenu;
 experienceLink.onclick = closeMenu;
 cancelLink.onclick = closeMenu;
+

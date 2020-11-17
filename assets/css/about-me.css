@@ -109,6 +109,8 @@
 }
 
 @media screen and (max-width: 600px) {
+
+
     #life-graphics {
         
         width: 30%;
@@ -126,6 +128,10 @@
     #life-graphics {
         width: 90%;
         margin-left: -30px;
+    }
+
+    #cs-graphics img {
+        height: 70px;
     }
 }
 

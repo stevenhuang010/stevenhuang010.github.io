@@ -289,22 +289,27 @@ h6 {
     }
     
     .section-line {
-        width: 30%;
-        height: 1px;
-        margin-left: 5%;
-        margin-right: 5%;
+        width: 50%;
+        height: 2px;
     }
 
     .section-line.second {
-        margin-left: 5%;
-        margin-right: 5%;
         display: block;
+        margin-left: 5%;
+    }
+
+    .section-line.first {
+        margin-right: 5%;
     }
 
     .section-heading {
+        position: relative;
         display: flex;
-        margin-left: 0;
+        width: 90%;
+        overflow: hidden;
+        margin-left: 5%;
         justify-content: center;
+        align-items: center;
     }
 
     #coursework-container {
@@ -320,5 +325,9 @@ h6 {
     }
     .project-flex {
         flex-direction: column;
+    }
+
+    .section-text-name {
+        white-space: nowrap;
     }
 }

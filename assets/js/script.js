@@ -234,7 +234,7 @@ function fadeOutUp(listNumber) {
         }
     );
 }
-
+/*
 //for reculating height of box whenever resize occurs for abs positioned elements, may omit if use relative positioning in 1-col layout,
 //good for 1 time use when seeing if text too big for vh though
 recalculateHeight();
@@ -255,3 +255,31 @@ function topAbsoluteYDistFromTop(object) {
 function bottomAbsoluteYDistFromTop(object) {
     return object.getBoundingClientRect().bottom - body.getBoundingClientRect().top;
 }
+*/
+//hamburger icon
+let hamburgerIcon = document.getElementById("hamburger-icon");
+let menu = document.querySelector(".menu");
+hamburgerIcon.onclick = openMenu;
+
+
+function openMenu() {
+    menu.classList.remove("closed");
+    menu.classList.remove("closing-animation");
+    menu.classList.add("opened");
+}
+
+function closeMenu() {
+    menu.classList.remove("opened");
+    menu.classList.add("closing-animation");
+    menu.classList.add("closed");
+}
+
+let homeLink = document.getElementById("home-link-hamburger");
+let aboutLink = document.getElementById("about-link-hamburger");
+let experienceLink = document.getElementById("experience-link-hamburger");
+let cancelLink = document.getElementById("cancel-icon");
+
+homeLink.onclick = closeMenu;
+aboutLink.onclick = closeMenu;
+experienceLink.onclick = closeMenu;
+cancelLink.onclick = closeMenu;

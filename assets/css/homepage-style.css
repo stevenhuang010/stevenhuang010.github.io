@@ -8,56 +8,67 @@ body {
     height: auto;
 }
 
-#homepage {
-    height: 100vh;
+.hero {
     position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
-#background {
-    position: absolute;
+.hero:before {
+    content: "";
+    display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    position: absolute;
+    background-image: url(../img/hero_background.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 38%;
     opacity: 0.7;
 }
 
+.hero-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
 #logo {
-    position: absolute;
-    left: 96px;
-    top: 24px;
+    position: relative;
+    margin-left: 7%;
+    margin-top: 24px;
 }
 
 #homepage p {
     position: absolute;
-    left: 96px;
-    top: 50%;
+    font-size: 40pt;
+    left: 7%;
+    top: 40%;
     transform: translateY(-50%);
     font-family: 'Quicksand', sans-serif;
-    padding: 0px;
-    margin: 0px;
-    font-size: 36pt;
-    width: 38%;
+    width: 50%;
 }
 
-
 #social-media-links {
-    width: 240px;
+    width: 300px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     position: absolute;
-    left: 17%;
-    bottom: 16%;
+    left: 18%;
+    bottom: 14%;
 }
 
 .social-link {
-    width: 36px;
+    width: 44px;
 }
 
 
 #mail {
-    width: 44px;
+    width: 54px;
 }
 
 #page-navigation {
@@ -67,7 +78,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     position: absolute;
-    right: 64px;
+    right: 7%;
     top: 28px;
     height: 40px;
     font-family: 'Quicksand', sans-serif;
@@ -101,6 +112,159 @@ body {
     transition-duration: 0.5s;
 }
 
-.width-change {
-    width: 100px;
+
+#hamburger-icon {
+    display: none;
+}
+
+@media screen and (min-width: 1000px) and (min-height: 1000px) {
+    #homepage p {
+        font-size: 48pt;
+        width: 60%;
+        top: 50%;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    #homepage p {
+        font-size: 36pt;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    #homepage p {
+        font-size: 36pt;
+        width: 65%;
+    }
+
+    #social-media-links {
+        left: 7%;
+    }
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+    .hero:before {
+        background-position: 70% 40%;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    #homepage p {
+        top: 200px;
+        left: 7%;
+        
+        font-size: 36pt;
+        width: 90%;
+    }
+
+    #social-media-links  {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 10%;
+        width: 250px;
+        justify-content: space-between;
+    }
+
+    .hero:before {
+        background-position: 100% 0%;
+    }
+
+    #page-navigation {
+        display: none;
+    }
+
+    #hamburger-icon, #cancel-icon {
+        display: block;
+        position: absolute;
+        right: 7%;
+        top: 36px;
+        height: 40px;
+    }
+
+}
+
+.closed.menu {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #e3e3e3;
+    position: absolute;
+    left: 100%;
+    top: 0%;
+}
+
+.closing-animation {
+    animation-name: left-right-closing;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.opened.menu {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #e3e3e3;
+    position: absolute;
+    top: 0%;
+    animation-name: right-left-opening;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu a {
+    font-family: 'Quicksand', 'sans-serif';
+    font-size: 20pt;
+    text-decoration: none;
+    margin-top: 10px;
+    color: black;
+}
+
+
+@media screen and (max-width: 380px) {
+    #homepage p {
+        top: 40%;
+        left: 7%;
+        
+        font-size: 32pt;
+        width: 50%;
+    }
+}
+
+@keyframes left-right-closing {
+    from { 
+        opacity: 1;
+        width: 100%;
+        left: 0%;
+    }
+    to { 
+        opacity: 0;
+        width: 0%;
+        left: 100%; 
+    }
+}
+
+@keyframes right-left-opening {
+    from {
+        left: 100%;
+        width: 0%;
+        opacity: 0;
+    }
+    to {
+        left: 0%;
+        width: 100%;
+        opacity: 1;
+    }
 }

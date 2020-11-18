@@ -332,7 +332,7 @@ h6 {
 
     /*For work section*/
     .work-container {
-        width: 70%;
+        width: 90%;
         flex-direction: column;
         margin-left: auto;
         margin-right: auto;
@@ -345,7 +345,7 @@ h6 {
     }
 
     .logo-description-dividing-line {
-        width: 70%;
+        width: 80%;
         height: 2px;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -355,10 +355,8 @@ h6 {
         align-items: center;
     }
 
-    .job-responsibilities {
-        justify-content: center;
+    .job-responsibilities {        
         padding-bottom: 20px;
-        width: 120%;
     }
 
     /* For coursework + language flexbox*/
@@ -386,7 +384,7 @@ h6 {
     }
 
     #coursework-container, #languages-container {
-        width: 70%;
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -394,7 +392,7 @@ h6 {
     /*For projects*/
 
     .project-container {
-        width: 70%;
+        width: 90%;
     }
     #pathfinder-container {
         margin-bottom: 30px;
@@ -413,63 +411,6 @@ h6 {
         width: 80%;
         height: auto;
     }
-
-   /*
-
-
-.project-image {
-    height: 250px;
-    display: block;
-    margin: 0 auto;
-    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.4);
-    margin-bottom: 25px;
-    opacity: 1;
-    transition-property: opacity;
-    transition: 1.5s;
-}
-
-.project-description {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 14pt;
-    width: 85%;
-    padding-top: 20px;
-    position: absolute;
-    opacity: 0;
-}
-
-.project-description.bolded {
-    left: 50%;
-    top: 30%;
-    transform: translate(-50%, -50%);
-}
-
-.project-description.sub {
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, 0%);
-}
-
-.light-opacity {
-    opacity: 0.2;
-    transition-property: opacity;
-    transition: 0.5s;
-}
-
-.flip {
-    transform: rotateX(180deg);
-    transition-property: transform;
-    transition-duration: 1s;
-}
-
-.project-flex  {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 32px;
-    width: 100%;
-}
-    */
 }
 
 .hidden {
@@ -480,13 +421,16 @@ h6 {
 @media screen and (max-width: 650px) {
     .project-subheading {
         font-size: 10pt;
-        width: 65%;
     }
 }
 
 @media screen and (max-width: 500px) {
     .job-responsibilities {
         width: 90%;
+    }
+
+    .job-responsibilities p {
+        width: 100%;
     }
 
     h3 {
@@ -499,14 +443,14 @@ h6 {
 
     .project-subheading {
         font-size: 9pt;
-        width: 80%;
+        width: 70%;
     }
 }
 
 @media screen and (max-width: 380px) {
     
     .project-subheading {
-        width: 90%;
+        width: 80%;
     }
 }
 

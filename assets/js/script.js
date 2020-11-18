@@ -237,6 +237,7 @@ function fadeOutUp(listNumber) {
 
 let courseworkContainer = document.getElementById("coursework-container");
 let languageContainer = document.getElementById("languages-container");
+let finalCourse = document.getElementById("last-course");
 if (window.innerWidth > 820) {
     languageContainer.style.height = courseworkContainer.clientHeight - 5 + "px";
 }
@@ -263,6 +264,8 @@ function recalculateMiddlePageHeight() {
 function recalculateLangContainerHeight() {
     if (window.innerWidth > 820) {
         languageContainer.style.height = courseworkContainer.clientHeight - 15 + "px";
+    } else {
+        languageContainer.style.height = courseworkContainer.clientHeight - 15 - finalCourse.clientHeight + "px";
     }
 }
 

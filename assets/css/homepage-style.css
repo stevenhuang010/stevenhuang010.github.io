@@ -2,10 +2,11 @@
     scroll-behavior: smooth;
 }
 
-body {
+html, body {
     margin: 0px;
     padding: 0px;
     height: auto;
+    overflow-x: hidden;
 }
 
 .hero {

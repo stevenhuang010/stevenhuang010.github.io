@@ -83,11 +83,11 @@
 
     #life-graphics {
         position: relative;
-        margin-left: 18%;
+        margin-left: 16.5%;
         right: 0%;
         top: 0%;
         left: 0%;
-        width: 55%;
+        width: 54%;
         padding-top: 60px;
     }
 
@@ -108,16 +108,19 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 610px) {
 
+    #cs-graphics {
+        width: 60%;
+    }
 
     #life-graphics {
-        
-        width: 30%;
+        margin-left: 10%;
+        width: 65%;
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 500px) {
     #cs-graphics {
         width: 80%;
     }
@@ -126,7 +129,7 @@
         font-size: 14pt;
     }
     #life-graphics {
-        width: 90%;
+        width: 96%;
         margin-left: -30px;
     }
 

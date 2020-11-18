@@ -235,12 +235,19 @@ function fadeOutUp(listNumber) {
     );
 }
 
+let courseworkContainer = document.getElementById("coursework-container");
+let languageContainer = document.getElementById("languages-container");
+if (window.innerWidth > 820) {
+    languageContainer.style.height = courseworkContainer.clientHeight - 5 + "px";
+}
+
 //for reculating height of box whenever resize occurs for abs positioned elements, may omit if use relative positioning in 1-col layout,
 //good for 1 time use when seeing if text too big for vh though
-recalculateHeight();
-window.addEventListener('resize', recalculateHeight);
+recalculateMiddlePageHeight();
+window.addEventListener('resize', recalculateMiddlePageHeight);
+window.addEventListener('resize', recalculateLangContainerHeight);
 
-function recalculateHeight() {
+function recalculateMiddlePageHeight() {
     let firstHeader = document.querySelector("h1");
     let finalP = getLowerElement(document.getElementById("cs-description"), document.getElementById("life-description"));
     let containerHeight = bottomAbsoluteYDistFromTop(finalP) - topAbsoluteYDistFromTop(firstHeader) + 80;
@@ -251,6 +258,12 @@ function recalculateHeight() {
     let csDescription = document.getElementById("cs-description");
     let line = document.getElementById("dividing-line");
     line.style.height = csDescription.clientHeight + 10 + "px";
+}
+
+function recalculateLangContainerHeight() {
+    if (window.innerWidth > 820) {
+        languageContainer.style.height = courseworkContainer.clientHeight - 15 + "px";
+    }
 }
 
 function getLowerElement(object1, object2) {
@@ -295,4 +308,5 @@ homeLink.onclick = closeMenu;
 aboutLink.onclick = closeMenu;
 experienceLink.onclick = closeMenu;
 cancelLink.onclick = closeMenu;
+
 

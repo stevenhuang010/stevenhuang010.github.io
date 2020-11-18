@@ -192,16 +192,17 @@ html, body {
     height: 100%;
     z-index: 1;
     background-color: #e3e3e3;
-    position: absolute;
+    position: fixed;
     left: 100%;
     top: 0%;
 }
 
 .closing-animation {
+    position: fixed;
+    
     animation-name: left-right-closing;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
-
 
     display: flex;
     flex-direction: column;

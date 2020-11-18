@@ -247,7 +247,7 @@ html, body {
 
 @keyframes left-right-closing {
     from { 
-        opacity: 0.95;
+        opacity: 1;
         width: 100%;
         left: 0%;
     }
@@ -267,6 +267,6 @@ html, body {
     to {
         left: 0%;
         width: 100%;
-        opacity: 0.95;
+        opacity: 1;
     }
 }

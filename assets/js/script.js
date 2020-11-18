@@ -302,14 +302,21 @@ function closeMenu() {
     menu.classList.add("closed");
 }
 
-let homeLink = document.getElementById("home-link-hamburger");
-let aboutLink = document.getElementById("about-link-hamburger");
-let experienceLink = document.getElementById("experience-link-hamburger");
-let cancelLink = document.getElementById("cancel-icon");
+document.getElementById("home-link-hamburger").onclick = closeMenu;
+document.getElementById("about-link-hamburger").onclick = closeMenu;
+document.getElementById("experience-link-hamburger").onclick = closeMenu;
+document.getElementById("cancel-icon").onclick = closeMenu;
 
-homeLink.onclick = closeMenu;
-aboutLink.onclick = closeMenu;
-experienceLink.onclick = closeMenu;
-cancelLink.onclick = closeMenu;
+/*remove nav lines from nav bar when clicked on for mobile*/ 
 
+document.getElementById("home-link").onclick = removeLines;
+document.getElementById("about-link").onclick = removeLines;
+document.getElementById("experience-link").onclick = removeLines;
 
+let navLines = document.getElementsByClassName("nav-line");
+
+function removeLines() {
+    for (let i = 0; i < navLines.length; i++) {
+        navLines[i].style.opacity = "0";
+    }
+}

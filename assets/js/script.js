@@ -320,3 +320,12 @@ function removeLines() {
         navLines[i].style.opacity = "0";
     }
 }
+
+//type it animation for first 
+new TypeIt("#hero-text", {
+    speed: 40,
+    loop: false,
+    afterComplete: function (step, instance) {
+        instance.destroy();
+    }
+}).go();

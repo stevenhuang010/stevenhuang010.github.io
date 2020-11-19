@@ -73,6 +73,7 @@ for (let i = 0; i < projectContainers.length; i++) {
 
 /*Only adds smooth scrolling after the nav bar is clicked so when reload, page stays put*/ 
 let pageNavBar = document.querySelector("#page-navigation");
+let menu = document.querySelector(".menu");
 
 function addScrollBehavior() {
     let doc = document.querySelector("html");
@@ -80,6 +81,7 @@ function addScrollBehavior() {
 }
 
 pageNavBar.onclick = addScrollBehavior;
+menu.onclick = addScrollBehavior;
 
 /*scroll animations*/
 
@@ -286,7 +288,6 @@ function bottomAbsoluteYDistFromTop(object) {
 
 //hamburger icon
 let hamburgerIcon = document.getElementById("hamburger-icon");
-let menu = document.querySelector(".menu");
 hamburgerIcon.onclick = openMenu;
 
 

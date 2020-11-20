@@ -3,6 +3,7 @@ let projectImages = document.getElementsByClassName("project-image");
 let arrows = document.getElementsByClassName("arrow");
 let projectDescriptions = document.getElementsByClassName("project-description");
 let projectContainers = document.getElementsByClassName("project-container");
+console.log(projectContainers.length);
 /*
 2 project descriptions / image
 */
@@ -18,17 +19,7 @@ function toggleLightBox(projectNumber) {
 }
 
 function fadeTextOut(projectNumber) {
-    projectDescriptions[2 * projectNumber].animate(
-        [ 
-            {transform: 'translate(-50%, 0px)', opacity: 1},
-            {transform: 'translate(-50%, 50px)', opacity: 0}
-        ], {
-            duration: 500,
-            easing: 'ease-out',
-            fill: 'forwards'
-        }
-    );
-    projectDescriptions[2 * projectNumber + 1].animate(
+    projectDescriptions[projectNumber].animate(
         [ 
             {transform: 'translate(-50%, 0px)', opacity: 1},
             {transform: 'translate(-50%, 50px)', opacity: 0}
@@ -41,17 +32,7 @@ function fadeTextOut(projectNumber) {
 }
 
 function fadeTextIn(projectNumber) {
-    projectDescriptions[2 * projectNumber].animate(
-        [ 
-            {transform: 'translate(-50%, 50px)', opacity: 0},
-            {transform: 'translate(-50%, 0px)', opacity: 1}
-        ], {
-            duration: 500,
-            easing: 'ease-out',
-            fill: 'forwards'
-        }
-    );
-    projectDescriptions[2 * projectNumber + 1].animate(
+    projectDescriptions[projectNumber].animate(
         [ 
             {transform: 'translate(-50%, 50px)', opacity: 0},
             {transform: 'translate(-50%, 0px)', opacity: 1}

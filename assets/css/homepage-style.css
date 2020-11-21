@@ -312,12 +312,12 @@ html, body {
 @media screen and (max-height: 280px) {
 
     #homepage p {
-        top: 55%;
+        top: 57%;
         font-size: 24pt;
-        width: 95%;
+        width: 62%;
     }
     #social-media-links  {
-        top: 75%;
+        top: 78%;
         left: 4.5%;
     }
 

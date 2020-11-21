@@ -289,7 +289,7 @@ html, body {
     }
 }
 
-@media screen and (max-height: 350px) and (min-width: 550px) and (max-width: 1200px) {
+@media screen and (max-height: 350px) {
     #page-navigation {
         display: none;
     }
@@ -313,11 +313,11 @@ html, body {
 
     #homepage p {
         top: 55%;
-        font-size: 24pt;
-        width: 90%;
+        font-size: 20pt;
+        width: 95%;
     }
     #social-media-links  {
-        top: 85%;
+        top: 80%;
         left: 4.5%;
     }
 

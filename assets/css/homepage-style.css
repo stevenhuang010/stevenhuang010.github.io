@@ -329,3 +329,9 @@ html, body {
         width: 48px;
     }
 }
+
+@media screen and (max-height: 470px) and (max-width: 480px) {
+    #homepage p {
+        top: 50%;
+    }
+}

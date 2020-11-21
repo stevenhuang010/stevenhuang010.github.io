@@ -60,7 +60,8 @@ html, body {
     align-items: center;
     position: absolute;
     left: 18%;
-    bottom: 14%;
+    top: 80%;
+    padding-bottom: 10px;
 }
 
 .social-link {

@@ -43,13 +43,15 @@ html, body {
 }
 
 #homepage p {
+    width: 50%;
+    margin: 0px;
+    padding: 0px;
     position: absolute;
     font-size: 40pt;
     left: 7%;
-    top: 40%;
+    top: 50%;
     transform: translateY(-50%);
     font-family: 'Quicksand', sans-serif;
-    width: 50%;
 }
 
 #social-media-links {
@@ -124,6 +126,7 @@ html, body {
         font-size: 48pt;
         width: 60%;
         top: 50%;
+        transform: translateY(-50%);
     }
 }
 
@@ -155,11 +158,12 @@ html, body {
 
 @media screen and (max-width: 480px) {
     #homepage p {
-        top: 200px;
+        top: 35%;
+        transform: translateY(-50%);
         left: 7%;
         
-        font-size: 36pt;
-        width: 90%;
+        font-size: 32pt;
+        width: 80%;
     }
 
     #social-media-links  {
@@ -240,8 +244,9 @@ html, body {
 
 @media screen and (max-width: 380px) {
     #homepage p {
-        top: 40%;
+        top: 50%;
         left: 7%;
+        transform: translateY(-50%);
         
         font-size: 32pt;
         width: 50%;

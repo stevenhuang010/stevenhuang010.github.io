@@ -283,6 +283,10 @@ html, body {
     #homepage p {
         font-size: 28pt;
     }
+
+    #social-media-links {
+        left: 5%;
+    }
 }
 
 @media screen and (max-height: 350px) and (min-width: 550px) and (max-width: 1200px) {
@@ -308,11 +312,12 @@ html, body {
 @media screen and (max-height: 280px) {
 
     #homepage p {
-        top: 53%;
+        top: 55%;
         font-size: 24pt;
+        width: 90%;
     }
     #social-media-links  {
-        top: 81%;
+        top: 85%;
         left: 4.5%;
     }
 

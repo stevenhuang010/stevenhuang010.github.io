@@ -165,7 +165,7 @@ html, body {
     #social-media-links  {
         left: 50%;
         transform: translateX(-50%);
-        bottom: 10%;
+        top: 82%;
         width: 250px;
         justify-content: space-between;
     }

@@ -307,8 +307,13 @@ html, body {
 
 @media screen and (max-height: 280px) {
 
+    #homepage p {
+        top: 53%;
+        font-size: 24pt;
+    }
     #social-media-links  {
-        width: 270px;
+        top: 81%;
+        left: 4.5%;
     }
 
     .social-link {

@@ -306,23 +306,16 @@ html, body {
 }
 
 @media screen and (max-height: 280px) {
-    #homepage p {
-        font-size: 24pt;
-        top: 55%;
-        width: 90%;
-    }
 
-    #social-media-links {
-        top: 70%;
-        left: 5%;
+    #social-media-links  {
         width: 270px;
     }
 
     .social-link {
-        width: 36px;
+        width: 40px;
     }
 
     #mail {
-        width: 44px;
+        width: 48px;
     }
 }

@@ -94,3 +94,14 @@ html {
         transform: translate(-50%, -50%) rotate(360deg);
     }
 }
+
+@media screen and (max-width: 700px) {
+    .loading-screen img {
+        width: 80px;
+    }
+
+    .ring {
+        width: 128px;
+        height: 128px;
+    }
+}

@@ -232,9 +232,6 @@ html, body {
     white-space: nowrap;
 }
 
-.menu a:hover {
-    font-weight: 600;
-}
 
 @keyframes left-right-closing {
     from { 

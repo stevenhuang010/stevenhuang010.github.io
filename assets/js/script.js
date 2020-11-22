@@ -347,12 +347,14 @@ hamburgerIcon.onclick = openMenu;
 
 
 function openMenu() {
+    //adds cancel icon to view
     document.getElementById("cancel-icon").style.display = "block";
     menu.classList.remove("closing-animation");
     menu.classList.add("opening-animation");
 }
 
 function closeMenu() {
+    //removes cancel icon from view
     document.getElementById("cancel-icon").style.display = "none";
     menu.classList.remove("opening-animation");
     menu.classList.add("closing-animation");

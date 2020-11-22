@@ -190,6 +190,10 @@ html, body {
         height: 40px;
     }
 
+    #cancel-icon {
+        display: none;
+    }
+
     #hamburger-icon:hover, #cancel-icon:hover {
         cursor: pointer;
     }
@@ -291,6 +295,10 @@ html, body {
         right: 7%;
         top: 36px;
         height: 40px;
+    }
+
+    #cancel-icon {
+        display: none;
     }
 
     #hamburger-icon:hover, #cancel-icon:hover {

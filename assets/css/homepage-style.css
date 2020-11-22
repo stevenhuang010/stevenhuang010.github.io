@@ -275,7 +275,7 @@ html, body {
     }
 }
 
-@media screen and (max-height: 400px) {
+@media screen and (max-height: 450px) {
     #page-navigation {
         display: none;
     }

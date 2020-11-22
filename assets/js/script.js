@@ -362,17 +362,17 @@ document.getElementById("about-link-hamburger").onclick = closeMenu;
 document.getElementById("experience-link-hamburger").onclick = closeMenu;
 document.getElementById("cancel-icon").onclick = closeMenu;
 
-/*when open hamburger menu because width < 480px / height < 400px and then resize
+/*when open hamburger menu because width < 480px / height < 450px and then resize
 window to where there should not be hamburger menu, menu still shows;
 this removes the hamburger menu from view; shouldn't contain "opening-animation" if width
->480px/height>400px because shouldn't be hamburger menu to begin with*/
+>480px/height>450px because shouldn't be hamburger menu to begin with*/
 
 window.addEventListener('resize', removeHamburgerMenu);
 
 function removeHamburgerMenu() {
     if (window.innerWidth > 480 && menu.classList.contains("opening-animation")) {
         menu.classList.remove("opening-animation");
-    } else if (window.innerHeight > 400 && menu.classList.contains("opening-animation")) {
+    } else if (window.innerHeight > 450 && menu.classList.contains("opening-animation")) {
         menu.classList.remove("opening-animation");
     }
 }

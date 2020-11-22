@@ -361,3 +361,18 @@ document.getElementById("home-link-hamburger").onclick = closeMenu;
 document.getElementById("about-link-hamburger").onclick = closeMenu;
 document.getElementById("experience-link-hamburger").onclick = closeMenu;
 document.getElementById("cancel-icon").onclick = closeMenu;
+
+/*when open hamburger menu because width < 480px / height < 380px and then resize
+window to where there should not be hamburger menu, menu still shows;
+this removes the hamburger menu from view; shouldn't contain "opening-animation" if width
+>480px/height>380px because shouldn't be hamburger menu to begin with*/
+
+window.addEventListener('resize', removeHamburgerMenu);
+
+function removeHamburgerMenu() {
+    if (window.innerWidth > 480 && menu.classList.contains("opening-animation")) {
+        menu.classList.remove("opening-animation");
+    } else if (window.innerHeight > 380 && menu.classList.contains("opening-animation")) {
+        menu.classList.remove("opening-animation");
+    }
+}

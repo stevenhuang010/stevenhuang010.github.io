@@ -213,7 +213,7 @@ html, body {
     animation-fill-mode: forwards;    
 }
 
-.opened.menu {
+.opening-animation {
     animation-name: right-left-opening;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;

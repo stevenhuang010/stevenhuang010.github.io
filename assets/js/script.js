@@ -339,9 +339,6 @@ function switchToMainScreen() {
     typeItAnimation();
 }
 
-
-
-
 /* hamburger menu for smaller screen sizes/mobile*/
 let hamburgerIcon = document.getElementById("hamburger-icon");
 let menu = document.querySelector(".menu");
@@ -350,28 +347,13 @@ hamburgerIcon.onclick = openMenu;
 
 
 function openMenu() {
-    /*
-    CSS versions
     menu.classList.remove("closing-animation");
-    menu.classList.add("opened");*/
-    document.getElementById("home-link-hamburger").onclick = closeMenu;
-    document.getElementById("about-link-hamburger").onclick = closeMenu;
-    document.getElementById("experience-link-hamburger").onclick = closeMenu;
-    document.getElementById("cancel-icon").onclick = closeMenu;
-    fadeInMenu();
+    menu.classList.add("opening-animation");
 }
 
 function closeMenu() {
-    /*
-    CSS versions
-    menu.classList.remove("opened");
+    menu.classList.remove("opening-animation");
     menu.classList.add("closing-animation");
-    */
-    document.getElementById("home-link-hamburger").onclick = undefined;
-    document.getElementById("about-link-hamburger").onclick = undefined;
-    document.getElementById("experience-link-hamburger").onclick = undefined;
-    document.getElementById("cancel-icon").onclick = undefined;
-    fadeOutMenu();
 }
 
 //closes menu
@@ -379,33 +361,3 @@ document.getElementById("home-link-hamburger").onclick = closeMenu;
 document.getElementById("about-link-hamburger").onclick = closeMenu;
 document.getElementById("experience-link-hamburger").onclick = closeMenu;
 document.getElementById("cancel-icon").onclick = closeMenu;
-
-
-
-function fadeInMenu() {
-    menu.animate(
-        [
-            {left: "100%", width: "0%", opacity: 0},
-            {left: "0%", width: "100%", opacity: 0.95}
-        ], {
-            duration: 400,
-            fill: 'forwards',
-            easing: 'ease-out'
-        }
-    );
-}
-
-function fadeOutMenu() {
-    menu.animate(
-        [
-            {left: "0%", width: "100%", opacity: 0.95},
-            {left: "100%", width: "0%", opacity: 0},
-            /*width back out to 100% so that 0% width does not allow for pressing of certain buttons*/
-            {left: "100%", width: "100%", opacity: 0}
-        ], {
-            duration: 400,
-            fill: 'forwards',
-            easing: 'ease-in'
-        }
-    );
-}

@@ -190,6 +190,10 @@ html, body {
         height: 40px;
     }
 
+    #hamburger-icon:hover, #cancel-icon:hover {
+        cursor: pointer;
+    }
+
 }
 
 .menu {
@@ -226,6 +230,10 @@ html, body {
     margin-top: 10px;
     color: black;
     white-space: nowrap;
+}
+
+.menu a:hover {
+    font-weight: 600;
 }
 
 @keyframes left-right-closing {
@@ -286,6 +294,10 @@ html, body {
         right: 7%;
         top: 36px;
         height: 40px;
+    }
+
+    #hamburger-icon:hover, #cancel-icon:hover {
+        cursor: pointer;
     }
 }
 

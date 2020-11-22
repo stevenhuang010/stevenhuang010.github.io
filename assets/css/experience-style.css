@@ -208,7 +208,7 @@ h6 {
 
 
 .light-opacity {
-    opacity: 0.2;
+    opacity: 0.08;
     transition-property: opacity;
     transition: 0.5s;
 }

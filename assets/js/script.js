@@ -370,9 +370,10 @@ this removes the hamburger menu from view; shouldn't contain "opening-animation"
 window.addEventListener('resize', removeHamburgerMenu);
 
 function removeHamburgerMenu() {
-    if (window.innerWidth > 480 && menu.classList.contains("opening-animation")) {
-        menu.classList.remove("opening-animation");
-    } else if (window.innerHeight > 450 && menu.classList.contains("opening-animation")) {
+    /*if either one: width >480 / height >450 is false, then the hamburger icon will be displayed in css because 
+    of queries, so will continue to display the opening animation here as well; both must be
+    true in order for the hamburger icon to be removed*/
+    if (window.innerWidth > 480 && window.innerHeight > 450 && menu.classList.contains("opening-animation")) {
         menu.classList.remove("opening-animation");
     }
 }

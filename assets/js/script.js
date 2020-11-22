@@ -285,11 +285,11 @@ function bottomAbsoluteYDistFromTop(object) {
 /* hamburger menu for smaller screen sizes/mobile*/
 let hamburgerIcon = document.getElementById("hamburger-icon");
 let menu = document.querySelector(".menu");
+//opens menu
 hamburgerIcon.onclick = openMenu;
 
 
 function openMenu() {
-    menu.classList.remove("closed");
     menu.classList.remove("closing-animation");
     menu.classList.add("opened");
 }
@@ -297,9 +297,9 @@ function openMenu() {
 function closeMenu() {
     menu.classList.remove("opened");
     menu.classList.add("closing-animation");
-    menu.classList.add("closed");
 }
 
+//closes menu
 document.getElementById("home-link-hamburger").onclick = closeMenu;
 document.getElementById("about-link-hamburger").onclick = closeMenu;
 document.getElementById("experience-link-hamburger").onclick = closeMenu;

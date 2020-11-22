@@ -192,9 +192,9 @@ html, body {
 
 }
 
-.closed.menu {
+.menu {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     z-index: 1;
     background-color: #e3e3e3;
     position: fixed;
@@ -203,8 +203,6 @@ html, body {
 }
 
 .closing-animation {
-    position: fixed;
-    
     animation-name: left-right-closing;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
@@ -216,13 +214,6 @@ html, body {
 }
 
 .opened.menu {
-    width: 100%;
-    height: 100vh;
-    z-index: 1;
-    background-color: #e3e3e3;
-    top: 0%;
-
-    position: fixed;
     animation-name: right-left-opening;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
@@ -240,18 +231,6 @@ html, body {
     margin-top: 10px;
     color: black;
     white-space: nowrap;
-}
-
-
-@media screen and (max-width: 380px) {
-    #homepage p {
-        top: 50%;
-        left: 7%;
-        transform: translateY(-50%);
-        
-        font-size: 32pt;
-        width: 50%;
-    }
 }
 
 @keyframes left-right-closing {
@@ -277,6 +256,17 @@ html, body {
         left: 0%;
         width: 100%;
         opacity: 0.95;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    #homepage p {
+        top: 50%;
+        left: 7%;
+        transform: translateY(-50%);
+        
+        font-size: 32pt;
+        width: 50%;
     }
 }
 

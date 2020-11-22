@@ -216,7 +216,7 @@ function fadeOutUp(listNumber) {
 
 let courseworkContainer = document.getElementById("coursework-container");
 let languageContainer = document.getElementById("languages-container");
-let finalCourse = document.getElementById("last-course");
+let finalCourse = courseworkContainer.lastChild;
 if (window.innerWidth > 820) {
     languageContainer.style.height = courseworkContainer.clientHeight - 5 + "px";
 }

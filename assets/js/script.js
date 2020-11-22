@@ -3,10 +3,7 @@ let projectImages = document.getElementsByClassName("project-image");
 let arrows = document.getElementsByClassName("arrow");
 let projectDescriptions = document.getElementsByClassName("project-description");
 let projectContainers = document.getElementsByClassName("project-container");
-console.log(projectContainers.length);
-/*
-2 project descriptions / image
-*/
+
 function toggleLightBox(projectNumber) {
     arrows[projectNumber].classList.toggle("flip");
     projectImages[projectNumber].classList.toggle("light-opacity");
@@ -64,9 +61,6 @@ pageNavBar.onclick = addScrollBehavior;
 
 /*scroll animations*/
 
-/*
-true when the container has been faded into the screen
-*/
 
 let containerListLeft = document.getElementsByClassName("left-fade");
 let containerListRight = document.getElementsByClassName("right-fade");
@@ -74,6 +68,9 @@ let containerListUp = document.getElementsByClassName("up-fade");
 let body = document.querySelector("body");
 let viewportHeight = window.innerHeight;
 
+/*
+true when the container has been faded into the screen
+*/
 for (let i = 0; i < containerListLeft.length; i++) {
     containerListLeft[i].fadedIn = false;
 }
@@ -87,6 +84,7 @@ for (let i = 0; i < containerListUp.length; i++) {
 }
 document.addEventListener('scroll', checkScroll);
 
+checkScroll();
 
 function checkScroll() {
     for (let i = 0; i < containerListLeft.length; i++) {
@@ -302,11 +300,41 @@ function removeLines() {
     }
 }
 
-//type it animation for first 
-new TypeIt("#hero-text", {
-    speed: 40,
-    loop: false,
-    afterComplete: function (step, instance) {
-        instance.destroy();
-    }
-}).go();
+/*
+typeItAnimation();
+*/
+function typeItAnimation() {
+    new TypeIt("#hero-text", {
+        speed: 40,
+        loop: false,
+        afterComplete: function (step, instance) {
+            instance.destroy();
+        }
+    }).go();
+}
+
+//handles loading screen
+let loadingScreen = document.querySelector(".loading-screen");
+//animates so hide until loading screen comes in
+let heroText = document.getElementById("hero-text");
+window.onload = transitionToMainScreen;
+
+
+function transitionToMainScreen() {
+    setTimeout(animateClosingScreen, 500);
+}
+
+
+function animateClosingScreen() {
+    document.querySelector("html").classList.add("scroll-bar");
+    heroText.style.display = "none";
+    loadingScreen.classList.add("hide");
+}
+
+loadingScreen.addEventListener("animationend", switchToMainScreen);
+
+function switchToMainScreen() {
+    loadingScreen.style.display = "none";
+    heroText.style.display = "block";
+    typeItAnimation();
+}

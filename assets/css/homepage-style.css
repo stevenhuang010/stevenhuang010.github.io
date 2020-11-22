@@ -239,6 +239,7 @@ html, body {
     text-decoration: none;
     margin-top: 10px;
     color: black;
+    white-space: nowrap;
 }
 
 
@@ -333,5 +334,6 @@ html, body {
 @media screen and (max-height: 470px) and (max-width: 480px) {
     #homepage p {
         top: 50%;
+        font-size: 28pt;
     }
 }

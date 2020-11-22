@@ -1,0 +1,96 @@
+.loading-screen {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #f5f5f5;
+    z-index: 1000;
+}
+
+.hide {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+
+    animation-name: closing;
+    animation-duration: 0.45s;
+    animation-direction: forwards;
+    animation-timing-function: ease-in;
+}
+
+.hide-quickly {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+
+    animation-name: closing;
+    animation-duration: 0s;
+    animation-direction: forwards;
+    animation-timing-function: ease-in;
+}
+
+
+@keyframes closing {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.loading-screen img {
+    position: fixed;
+    width: 100px;
+    left: 50vw;
+    /*vw includes potential scroll bar width so when add scrollbar to html in js file, there is not jarring width change*/
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+html {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.scroll-bar {
+    height: auto;
+    overflow-y: visible;
+}
+
+.ring {
+    position: fixed;
+    left: 50vw;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+.ring.one {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(103, 103, 103, 0.5);
+}
+
+.ring.two {
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-left-color: black;
+
+    animation-name: circularOrbit;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes circularOrbit {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}

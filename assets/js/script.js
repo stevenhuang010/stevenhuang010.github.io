@@ -220,9 +220,9 @@ function fadeOutUp(listNumber) {
     );
 }
 
-/* making the courseworkcontainer and languagecontainer the same height if the viewport height is 
-greater than 820px, which is when the layout goes to one column so same height is no longer necessary when
-<= 820px; recalculate the height when the screen is resized*/
+/* making the courseworkcontainer and languagecontainer the same height if the viewport width is 
+greater than 820px; when <= 820px, the layout goes to one column so same height is no longer necessary, so 
+recalculate the height of languageContainer when the screen is resized (recalculates to auto)*/
 let courseworkContainer = document.getElementById("coursework-container");
 let languageContainer = document.getElementById("languages-container");
 let finalCourse = courseworkContainer.lastChild;
@@ -235,7 +235,7 @@ function recalculateLangContainerHeight() {
     if (window.innerWidth > 820) {
         languageContainer.style.height = courseworkContainer.clientHeight - 15 + "px";
     } else {
-        languageContainer.style.height = courseworkContainer.clientHeight - 15 - finalCourse.clientHeight + "px";
+        languageContainer.style.height = "auto";
     }
 }
 

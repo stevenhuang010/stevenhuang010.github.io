@@ -137,7 +137,7 @@ html, body {
     }
 }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 760px) {
     #homepage p {
         font-size: 36pt;
         width: 65%;

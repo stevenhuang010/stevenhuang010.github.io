@@ -434,6 +434,10 @@ h6 {
     .project-subheading {
         width: 40%;
     }
+    
+    h5, h6 {
+        font-size: 9pt;
+    }
 }
 
 .hidden {
@@ -444,11 +448,6 @@ h6 {
     .project-description {
         top: 30%;
     }
-
-    h5, h6 {
-        font-size: 9pt;
-    }
-
 }
 @media screen and (max-width: 650px) {
     .project-subheading {

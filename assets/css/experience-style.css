@@ -498,9 +498,9 @@ h6 {
     .project-description.two {
         top: 36%;
     }
-
+    
     .job-responsibilities {
-        text-align: justify;
+        text-align: center;
     }
 }
 

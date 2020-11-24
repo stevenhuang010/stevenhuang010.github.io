@@ -36,6 +36,8 @@
     width: 32%;
     line-height: 1.4;
     opacity: 0;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 #cs-description {

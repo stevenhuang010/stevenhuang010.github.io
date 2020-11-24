@@ -444,6 +444,11 @@ h6 {
     .project-description {
         top: 30%;
     }
+
+    h5, h6 {
+        font-size: 9pt;
+    }
+
 }
 @media screen and (max-width: 650px) {
     .project-subheading {
@@ -487,10 +492,6 @@ h6 {
         font-size: 11pt;
     }
 
-    h5, h6 {
-        font-size: 9pt;
-    }
-
 }
 
 @media screen and (max-width: 420px) {
@@ -515,7 +516,7 @@ h6 {
     }
     
     h4 {
-        font-size: 13pt;
+        font-size: 14pt;
     }
 
     h3 {

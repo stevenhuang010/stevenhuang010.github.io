@@ -362,8 +362,15 @@ h6 {
         align-items: center;
     }
 
-    .job-responsibilities {        
+    .job-responsibilities {      
+        width: 115%;  
         padding-bottom: 20px;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    .job-responsibilities p {
+        width: 100%;
     }
 
     /* For coursework + language flexbox*/
@@ -451,13 +458,6 @@ h6 {
 }
 
 @media screen and (max-width: 500px) {
-    .job-responsibilities {
-        width: 90%;
-    }
-
-    .job-responsibilities p {
-        width: 100%;
-    }
 
     h3 {
         font-size: 19pt;
@@ -498,6 +498,10 @@ h6 {
     .project-description.two {
         top: 36%;
     }
+
+    .job-responsibilities {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 340px) {
@@ -508,6 +512,10 @@ h6 {
 
     .project-description.two {
         top: 30%;
+    }
+
+    h5, h6 { 
+        font-size: 9pt;
     }
 }
 

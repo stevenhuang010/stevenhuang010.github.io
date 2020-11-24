@@ -351,7 +351,7 @@ h6 {
     }
 
     .logo-description-dividing-line {
-        width: 80%;
+        width: 90%;
         height: 2px;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -359,11 +359,11 @@ h6 {
     }
 
     .description-section {
-        align-items: center;
+        width: 90%;
     }
 
     .job-responsibilities {      
-        width: 115%;  
+        width: 100%;  
         padding-bottom: 20px;
         text-align: left;
     }
@@ -448,7 +448,7 @@ h6 {
 @media screen and (max-width: 650px) {
     .project-subheading {
         font-size: 10pt;
-        width: 60%;
+        width: 50%;
     }
 
     .project-description {
@@ -468,7 +468,7 @@ h6 {
 
     .project-subheading {
         font-size: 9pt;
-        width: 70%;
+        width: 55%;
     }
 
     .project-description {
@@ -482,14 +482,26 @@ h6 {
     .project-description.two {
         top: 35%;
     }
+
+    .job-responsibilities p {
+        font-size: 11pt;
+    }
+
+    h5, h6 {
+        font-size: 9pt;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    .project-subheading {
+        width: 70%;
+    }
 }
 
 @media screen and (max-width: 380px) {
     
-    .project-subheading {
-        width: 80%;
-    }
-
+    
     .project-description {
         font-size: 11pt;
     }
@@ -497,9 +509,21 @@ h6 {
     .project-description.two {
         top: 36%;
     }
+
+    .project-name {
+        font-size: 15pt;
+    }
     
-    .job-responsibilities {
-        text-align: left;
+    h4 {
+        font-size: 13pt;
+    }
+
+    h3 {
+        font-size: 17pt;
+    }
+
+    #coursework-container p, #languages-container p {
+        font-size: 13pt;
     }
 }
 
@@ -512,9 +536,16 @@ h6 {
     .project-description.two {
         top: 30%;
     }
+}
 
-    h5, h6 { 
-        font-size: 9pt;
+@media screen and (max-width: 320px) {
+    .project-subheading {
+        width: 80%;
     }
 }
 
+@media screen and (max-width: 280px) {
+    .project-subheading {
+        width: 90%;
+    }
+}

@@ -282,22 +282,6 @@ function bottomAbsoluteYDistFromTop(object) {
     return object.getBoundingClientRect().bottom - body.getBoundingClientRect().top;
 }
 
-
-/*remove nav lines from nav bar when clicked on for mobile; when clicked nav lines would stay;
-removeLines removes them*/ 
-
-let navLines = document.getElementsByClassName("nav-line");
-
-document.getElementById("home-link").onclick = removeLines;
-document.getElementById("about-link").onclick = removeLines;
-document.getElementById("experience-link").onclick = removeLines;
-
-function removeLines() {
-    for (let i = 0; i < navLines.length; i++) {
-        navLines[i].style.opacity = "0";
-    }
-}
-
 //for homepage text
 function typeItAnimation() {
     new TypeIt("#hero-text", {

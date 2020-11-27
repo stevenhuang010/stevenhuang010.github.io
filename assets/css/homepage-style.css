@@ -110,12 +110,23 @@ html, body {
     transition-duration: 0.5s;
 }
 
-.link-container:hover .nav-line {
-    width: 100%;
-    opacity: 1;
-    transition-duration: 0.5s;
+/*if the device supports hovering capabilities*/
+@media (hover: hover) {
+    .link-container:hover .nav-line {
+        width: 100%;
+        opacity: 1;
+        transition-duration: 0.5s;
+    }
 }
 
+/*if one input form supports hovering but another doesnt (has mouse and is also touchscreen),
+remove the nav lines*/
+@media (any-hover: none) {
+    .link-container:hover .nav-line {
+        width: 1%;
+        opacity: 0;
+    }
+}
 
 #hamburger-icon {
     display: none;

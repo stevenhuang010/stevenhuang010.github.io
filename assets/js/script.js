@@ -69,7 +69,6 @@ let containerListLeft = document.getElementsByClassName("left-fade");
 let containerListRight = document.getElementsByClassName("right-fade");
 let containerListUp = document.getElementsByClassName("up-fade");
 let body = document.querySelector("body");
-let viewportHeight = window.innerHeight;
 
 /*
 true when the container has been faded into the screen
@@ -137,7 +136,7 @@ function checkScroll() {
 /* the greater than constant (0.8), the earlier the containers fade in and the later that
 the containers fade out*/
 function calculateScrollFromTop(container) {
-    return container.getBoundingClientRect().top - body.getBoundingClientRect().top - 0.8 * viewportHeight;
+    return container.getBoundingClientRect().top - body.getBoundingClientRect().top - 0.8 * window.innerHeight;
 }
 
 function fadeInLeft(listNumber) {

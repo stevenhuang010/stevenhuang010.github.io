@@ -67,7 +67,6 @@ function addScrollBehavior() {
 /*containers that fade in from the left*/ 
 let containerListLeft = document.getElementsByClassName("left-fade");
 let containerListRight = document.getElementsByClassName("right-fade");
-let containerListUp = document.getElementsByClassName("up-fade");
 let body = document.querySelector("body");
 
 /*
@@ -81,9 +80,6 @@ for (let i = 0; i < containerListRight.length; i++) {
     containerListRight[i].fadedIn = false;
 }
 
-for (let i = 0; i < containerListUp.length; i++) {
-    containerListUp.fadedIn = false;
-}
 document.addEventListener('scroll', checkScroll);
 
 /*when reload + loading screen comes up, calling this function automatically makes sure that  
@@ -115,19 +111,6 @@ function checkScroll() {
             if (containerListRight[i].fadedIn) {
                 containerListRight[i].fadedIn = false;
                 fadeOutRight(i);
-            }
-        }
-    }
-    for (let i = 0; i < containerListUp.length; i++) {
-        if (window.scrollY > calculateScrollFromTop(containerListUp[i])) {
-            if (!containerListUp[i].fadedIn) {
-                containerListUp[i].fadedIn = true;
-                fadeInUp(i);
-            }
-        } else {
-            if (containerListUp[i].fadedIn) {
-                containerListUp[i].fadedIn = false;
-                fadeOutUp(i);
             }
         }
     }
@@ -192,32 +175,6 @@ function fadeOutRight(listNumber) {
 }
 
 
-
-function fadeInUp(listNumber) {
-    containerListUp[listNumber].animate(
-        [ 
-            {transform: 'translateY(50px)', opacity: 0},
-            {transform: 'translateY(0px)', opacity: 1}
-        ], {
-            duration: 500,
-            easing: 'ease-out',
-            fill: 'forwards'
-        }
-    );
-}
-
-function fadeOutUp(listNumber) {
-    containerListUp[listNumber].animate(
-        [ 
-            {transform: 'translateY(0px)', opacity: 1},
-            {transform: 'translateY(50px)', opacity: 0}
-        ], {
-            duration: 500,
-            easing: 'ease-in',
-            fill: 'forwards'
-        }
-    );
-}
 
 /* making the courseworkcontainer and languagecontainer the same height if the viewport width is 
 greater than 820px; when <= 820px, the layout goes to one column so same height is no longer necessary, so 

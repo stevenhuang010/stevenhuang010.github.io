@@ -61,6 +61,14 @@ h3 {
     margin-right: 3%;
 }
 
+@media screen and (min-width: 820px) {
+    #wdd {
+        width: 10%;
+        margin-left: 7%;
+        margin-right: 7%;
+    }  
+} 
+
 .logo-description-dividing-line {
     height: 100px;
     width: 2px;
@@ -350,6 +358,10 @@ h6 {
         padding-top: 20px;
     }
 
+    #wdd {
+        width: 20%;
+    }
+
     .logo-description-dividing-line {
         width: 90%;
         height: 2px;
@@ -494,6 +506,10 @@ h6 {
     
     h5 {
         font-size: 10pt;
+    }
+
+    #wdd {
+        width: 30%;
     }
 }
 

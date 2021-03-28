@@ -181,16 +181,13 @@ greater than 820px; when <= 820px, the layout goes to one column so same height 
 recalculate the height of languageContainer when the screen is resized (recalculates to auto)*/
 let courseworkContainer = document.getElementById("coursework-container");
 let languageContainer = document.getElementById("languages-container");
-let finalCourse = courseworkContainer.lastChild;
 
-if (window.innerWidth > 820) {
-    languageContainer.style.height = courseworkContainer.clientHeight + 22 + "px";
-}
+recalculateLangContainerHeight();
 window.addEventListener('resize', recalculateLangContainerHeight);
 
 function recalculateLangContainerHeight() {
     if (window.innerWidth > 820) {
-        languageContainer.style.height = courseworkContainer.clientHeight - 15 + "px";
+        languageContainer.style.height = courseworkContainer.clientHeight - 15 +  "px";
     } else {
         languageContainer.style.height = "auto";
     }

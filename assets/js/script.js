@@ -182,7 +182,8 @@ recalculate the height of languageContainer when the screen is resized (recalcul
 let courseworkContainer = document.getElementById("coursework-container");
 let languageContainer = document.getElementById("languages-container");
 
-recalculateLangContainerHeight();
+//must load the element first so the clientHeight attribute it accurately updated
+window.addEventListener("load", recalculateLangContainerHeight);
 window.addEventListener('resize', recalculateLangContainerHeight);
 
 function recalculateLangContainerHeight() {

@@ -1,5 +1,5 @@
 #about-me {
-    background: #EBEBEB;
+    background: #f0f0f0;
     position: relative;
     overflow: hidden;
 }
@@ -54,10 +54,11 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 1px;
+    width: 6px;
     height: 250px;
     top: 331px;
-    background: black;
+    background: white;
+    border-radius: 50%;
 }
 
 @media screen and (max-width: 1000px) {

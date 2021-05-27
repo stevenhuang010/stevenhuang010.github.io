@@ -194,6 +194,23 @@ function recalculateLangContainerHeight() {
     }
 }
 
+let logoDescriptionLines = document.getElementsByClassName("logo-description-dividing-line");
+let descriptions = document.getElementsByClassName("description-section");
+window.addEventListener('load', recalculateLineHeight);
+window.addEventListener('resize', recalculateLineHeight);
+
+function recalculateLineHeight() {
+    if (window.innerWidth > 820) {
+        for (let i = 0; i < logoDescriptionLines.length; i++) {
+            logoDescriptionLines[i].style.height = "" + descriptions[i].clientHeight + "px";
+        }
+    } else {
+        for (let i = 0; i < logoDescriptionLines.length; i++) {
+            logoDescriptionLines[i].style.height = "2px";
+        }
+    }
+}
+
 /* recalculating height of about me page when resize occurs, so that the gray background will always 
 cover the entire height of the elements on the about me page, since the life graphics and life description
 are absolutely positioned and not included in the flow of the page (useful if life description is longer than the cs

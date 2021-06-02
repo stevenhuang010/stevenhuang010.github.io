@@ -55,7 +55,7 @@ html, body {
 }
 
 #social-media-links {
-    width: 300px;
+    width: 350px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -148,15 +148,17 @@ remove the nav lines*/
     }
 }
 
+@media screen and (max-width: 880px) {
+    #social-media-links {
+        left: 5.25%;
+    }
+}
 @media screen and (max-width: 760px) {
     #homepage p {
         font-size: 36pt;
         width: 65%;
     }
 
-    #social-media-links {
-        left: 5.25%;
-    }
 }
 
 
@@ -165,7 +167,6 @@ remove the nav lines*/
         background-position: 70% 40%;
     }
 }
-
 
 @media screen and (max-width: 480px) {
     #homepage p {
@@ -181,7 +182,7 @@ remove the nav lines*/
         left: 50%;
         transform: translateX(-50%);
         top: 82%;
-        width: 250px;
+        width: 310px;
         justify-content: space-between;
     }
 

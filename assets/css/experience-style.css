@@ -155,15 +155,20 @@ remove the nav lines*/
 }
 
 
-
-#pathfinder-container {
+#sorting-container {
     position: relative;
     margin-left: 7%;
 }
 
+#pathfinder-container {
+    position: relative;
+    margin-left: 6.5%;
+}
+
 #sudoku-container {
     position: relative;
-    margin-left: 6%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .project-name {
@@ -202,11 +207,11 @@ remove the nav lines*/
     height: 250px;
     display: block;
     margin: 0 auto;
-    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.4);
     margin-bottom: 25px;
     opacity: 1;
     transition-property: opacity;
     transition: 1.5s;
+    border-radius: 10px;
 }
 
 .arrow {
@@ -251,6 +256,7 @@ remove the nav lines*/
     align-items: center;
     margin-top: 32px;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .second.section-line {
@@ -438,13 +444,13 @@ remove the nav lines*/
     .project-container {
         width: 90%;
     }
-    #pathfinder-container {
+    #pathfinder-container, #sorting-container {
         margin-bottom: 30px;
         margin-left: 0px;
     }
 
     #sudoku-container {
-        margin-left: 0px;
+        margin-left: 5%;
     }
 
     .project-flex {

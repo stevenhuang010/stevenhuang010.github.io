@@ -211,7 +211,7 @@ remove the nav lines*/
     opacity: 1;
     transition-property: opacity;
     transition: 1.5s;
-    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.4);
 }
 
 .arrow {

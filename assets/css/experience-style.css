@@ -110,6 +110,34 @@ h6 {
     color: #909090;
 }
 
+.link-icon {
+    width: 32px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+    opacity: 0.25;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+}
+@media (hover: hover) {
+    .link-icon:hover {
+        cursor: pointer;
+        transition-property: opacity;
+        transition-duration: 0.5s;
+        opacity: 1;
+    }
+}
+
+/*if one input form supports hovering but another doesnt (has mouse and is also touchscreen),
+remove the nav lines*/
+@media (any-hover: none) {
+    .link-container:hover {
+        opacity: 0.25;
+    }
+}
+
+
 .job-responsibilities {
     padding-top: 10px;
     display: flex;

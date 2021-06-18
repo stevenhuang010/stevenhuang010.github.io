@@ -120,6 +120,24 @@ h6 {
     transition-property: opacity;
     transition-duration: 0.5s;
 }
+
+.link-project {
+    top: 24px;
+}
+
+@media screen and (max-width: 1020px) {
+    .link-icon {
+        width: 28px;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .link-project {
+        top: 90%;
+        right: 15px;
+    }
+}
+
 @media (hover: hover) {
     .link-icon:hover {
         cursor: pointer;
@@ -499,7 +517,12 @@ remove the nav lines*/
     .project-subheading {
         width: 40%;
     }
-    
+
+    .link-icon {
+        width: 32px;
+        top: 20px;
+        right: 20px;
+    }   
 }
 
 .hidden {
@@ -519,6 +542,10 @@ remove the nav lines*/
 
     .project-description {
         font-size: 14pt;
+    }
+
+    .link-project {
+        top: 22px;
     }
 }
 
@@ -564,6 +591,10 @@ remove the nav lines*/
     #wdd {
         width: 30%;
     }
+
+    .link-project {
+        top: 20px;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -593,6 +624,11 @@ remove the nav lines*/
 
     #coursework-container p, #languages-container p {
         font-size: 13pt;
+    }
+
+    .link-icon {
+        top: 15px;
+        right: 15px;
     }
 }
 

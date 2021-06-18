@@ -3,22 +3,33 @@ let projectContainers = document.getElementsByClassName("project-container");
 let projectImages = document.getElementsByClassName("project-image");
 let arrows = document.getElementsByClassName("arrow");
 let projectDescriptions = document.getElementsByClassName("project-description");
+let projectIcons = document.getElementsByClassName("link-project");
+let hoveringOverIcons = [];
 
 for (let i = 0; i < projectContainers.length; i++) {
     projectContainers[i].clicked = false;
     projectContainers[i].onclick = () => {
         toggleLightBox(i);
     }
+    hoveringOverIcons.push(false);
+    projectIcons[i].onmouseenter = () => {
+        hoveringOverIcons[i] = true;
+    }
+    projectIcons[i].onmouseout = () => {
+        hoveringOverIcons[i] = false;
+    }
 }
 
 function toggleLightBox(projectNumber) {
-    arrows[projectNumber].classList.toggle("flip");
-    projectImages[projectNumber].classList.toggle("light-opacity");
-    projectContainers[projectNumber].clicked = !projectContainers[projectNumber].clicked;
-    if (projectContainers[projectNumber].clicked) {
-        fadeTextIn(projectNumber);
-    } else {
-        fadeTextOut(projectNumber);
+    if (!hoveringOverIcons[projectNumber]) {
+        arrows[projectNumber].classList.toggle("flip");
+        projectImages[projectNumber].classList.toggle("light-opacity");
+        projectContainers[projectNumber].clicked = !projectContainers[projectNumber].clicked;
+        if (projectContainers[projectNumber].clicked) {
+            fadeTextIn(projectNumber);
+        } else {
+            fadeTextOut(projectNumber);
+        }
     }
 }
 

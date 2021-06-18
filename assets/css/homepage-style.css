@@ -286,6 +286,20 @@ remove the nav lines*/
     }
 }
 
+@media screen and (max-width: 320px) {
+    #social-media-links {
+        width: 250px;
+    }
+
+    .social-link {
+        width: 36px;
+    }
+
+    #mail {
+        width: 44px;
+    }
+}
+
 @media screen and (max-height: 400px) and (min-width: 481px) {
     #homepage p {
         font-size: 28pt;

@@ -374,6 +374,14 @@ html, body {
     #mail {
         width: 80px;
     }
+
+    /*
+    makes the hover effect work because the lines are visible with the increased font size
+    of #page-navigation
+    */
+    .nav-line {
+        padding-bottom: 1px;
+    }
 }
 
 @media screen and (min-width: 2100px) {

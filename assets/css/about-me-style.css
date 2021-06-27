@@ -135,3 +135,39 @@
         height: 70px;
     }
 }
+
+@media screen and (min-width: 1600px) {
+    #life-graphics {
+        top: 190px;
+    }
+
+    #about-me p {
+        font-size: 24pt;
+    }
+
+    #computer-graphic {
+        width: 140px;
+    }
+
+    #website-graphic {
+        width: 150px;
+    }
+
+    #tennis-graphic {
+        width: 280px;
+    }
+
+    #cs-description {
+        margin-top: 90px;
+        padding-bottom: 60px;
+    }
+
+    #life-description {
+        top: 335px;
+    }
+
+    #dividing-line {
+        top: 335px;
+        width: 8px;
+    }
+}

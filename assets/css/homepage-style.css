@@ -365,3 +365,37 @@ remove the nav lines*/
         font-size: 28pt;
     }
 }
+
+@media screen and (min-width: 1600px) {
+    #page-navigation {
+        width: 450px;
+        font-size: 20pt;
+    }
+
+    #homepage p {
+        font-size: 52pt;
+    }
+
+    #logo {
+        width: 100px;
+    }
+
+    #social-media-links {
+        width: 600px;
+        left: 14%;
+    }
+
+    .social-link {
+        width: 64px;
+    }
+
+    #mail {
+        width: 80px;
+    }
+}
+
+@media screen and (min-width: 2100px) {
+    #homepage p {
+        font-size: 60pt;
+    }
+}

@@ -661,3 +661,63 @@ remove the nav lines*/
         width: 90%;
     }
 }
+
+@media screen and (min-width: 1600px) {
+    h1 {
+        font-size: 44pt;
+    }
+
+    .section-line {
+        width: 3px;
+        height: 50px;
+    }
+
+    h3 {
+        font-size: 30pt;
+    }
+
+    h4 {
+        font-size: 22pt;
+    }
+
+    h5 {
+        font-size: 16pt;
+    }
+
+    h6 {
+        font-size: 14pt;
+    }
+
+    .job-responsibilities p {
+        font-size: 16pt;
+    }
+
+    #coursework-container p, #languages-container p {
+        font-size: 20pt;
+    }
+
+    .project-name {
+        font-size: 28pt;
+        margin-bottom: 10px;
+    }
+
+    .project-subheading {
+        font-size: 16pt;
+    }
+
+    .project-image {
+        height: 400px;
+    }
+
+    .arrow {
+        width: 55px;
+    }
+
+    .project-description {
+        font-size: 18pt;
+    }
+
+    .link-icon {
+        width: 48px;
+    }
+}

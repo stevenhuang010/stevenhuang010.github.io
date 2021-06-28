@@ -382,6 +382,10 @@ html, body {
     .nav-line {
         padding-bottom: 1px;
     }
+
+    .link-container {
+        height: 50px;
+    }
 }
 
 @media screen and (min-width: 2100px) {

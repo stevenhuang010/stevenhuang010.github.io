@@ -6,11 +6,19 @@ let projectDescriptions = document.getElementsByClassName("project-description")
 let projectIcons = document.getElementsByClassName("link-project");
 let hoveringOverIcons = [];
 
+// Lightbox Effect
+
 for (let i = 0; i < projectContainers.length; i++) {
     projectContainers[i].clicked = false;
     projectContainers[i].onclick = () => {
         toggleLightBox(i);
     }
+}
+
+
+// Upper Right Icons
+
+for (let i = 0; i < projectIcons.length; i++) { 
     hoveringOverIcons.push(false);
     projectIcons[i].onmouseenter = () => {
         hoveringOverIcons[i] = true;

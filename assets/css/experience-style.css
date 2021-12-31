@@ -375,7 +375,7 @@ remove the nav lines*/
         top: 30%;
     }
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1000px) {
     .project-image {
         height: 200px;
     }

@@ -6,8 +6,7 @@ let projectDescriptions = document.getElementsByClassName("project-description")
 let projectIcons = document.getElementsByClassName("link-project");
 let hoveringOverIcons = [];
 
-// Lightbox Effect
-
+// Lightbox Effect for all projects
 for (let i = 0; i < projectContainers.length; i++) {
     projectContainers[i].clicked = false;
     projectContainers[i].onclick = () => {
@@ -16,18 +15,29 @@ for (let i = 0; i < projectContainers.length; i++) {
 }
 
 
-// Upper Right Icons
+// Link Icons
 
+// 0th project has no hover icon, [false, _, _, _]
+hoveringOverIcons.push(false);
+
+// Go through all the projects that have link icons (3)
 for (let i = 0; i < projectIcons.length; i++) { 
     hoveringOverIcons.push(false);
+    // projectIcons[0] --> the 1st project becuase 0th project has no icon
+    // projectIcons[1] --> the 2nd project becuase 0th project has no icon, etc.
     projectIcons[i].onmouseenter = () => {
-        hoveringOverIcons[i] = true;
+        hoveringOverIcons[i + 1] = true;
     }
     projectIcons[i].onmouseout = () => {
-        hoveringOverIcons[i] = false;
+        hoveringOverIcons[i + 1] = false;
     }
 }
 
+// projectContainers = [project0, project1, project2, project3]
+// projectIcons = [linkProject1, linkProject2, linkProject3]
+// hoveringOverIcons = [false, _, _, _]
+
+// projectNumber refers to projectContainers + hoveringOverIcons index at the same time
 function toggleLightBox(projectNumber) {
     if (!hoveringOverIcons[projectNumber]) {
         arrows[projectNumber].classList.toggle("flip");

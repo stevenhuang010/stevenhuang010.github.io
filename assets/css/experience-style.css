@@ -547,12 +547,8 @@ remove the nav lines*/
         font-size: 12pt;
     }
 
-    .project-description.one {
+    .project-description {
         top: 30%;
-    }
-
-    .project-description.two {
-        top: 35%;
     }
 
     .job-responsibilities p {
@@ -613,13 +609,9 @@ remove the nav lines*/
 }
 
 @media screen and (max-width: 340px) {
-    .project-description.one {
+    .project-description {
         top: 30%;
         font-size: 10pt;
-    }
-
-    .project-description.two {
-        top: 30%;
     }
 }
 
@@ -636,6 +628,15 @@ remove the nav lines*/
 
 }
 
+@media screen and (max-width: 300px) {
+    .project-description {
+        font-size: 9pt;
+    }
+
+    #java-vcs-description {
+        top: 28%;
+    }
+}
 @media screen and (max-width: 280px) {
     .project-subheading {
         width: 90%;

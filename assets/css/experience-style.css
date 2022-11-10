@@ -63,6 +63,12 @@ h3 {
     margin-right: 3%;
 }
 
+#zip-logo {
+    width: 12%;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
 @media screen and (min-width: 820px) {
     #wdd {
         width: 10%;
@@ -422,6 +428,10 @@ remove the nav lines*/
     .company-logo {
         width: 50%;
         padding-top: 20px;
+    }
+
+    #zip-logo {
+        width: 30%;
     }
 
     #wdd {

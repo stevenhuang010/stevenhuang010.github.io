@@ -1,1 +1,34 @@
-<?xml version="1.0" ?><svg height="56.6934px" id="Layer_1" style="enable-background:new 0 0 56.6934 56.6934;" version="1.1" viewBox="0 0 56.6934 56.6934" width="56.6934px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polygon points="29.3938,31.666 39.309,38.5604 39.309,24.8362 34.9235,27.8569 "/><path d="M28.3472,3.9229c-13.5996,0-24.625,11.0234-24.625,24.623c0,13.5997,11.0254,24.625,24.625,24.625  c13.5986,0,24.624-11.0253,24.624-24.625C52.9712,14.9463,41.9458,3.9229,28.3472,3.9229z M39.9141,39.7094v0.0007H16.7774h-0.8704  c-1.3447,0-2.4451-1.1003-2.4451-2.4451V20.5627c0-1.3448,1.1003-2.4451,2.4451-2.4451l0.0096,0.0072l-0.0096-0.0078h24.9518  c1.3447,0,2.445,1.1002,2.445,2.4449v0.7087l0.0007-0.0005l-0.0007,0.0007l0.004,15.9963  C43.2494,39.0451,42.479,39.6797,39.9141,39.7094z"/><path d="M28.3421,32.2622c-0.1196,0-0.2391-0.0359-0.3419-0.1073l-0.1786-0.1244l-10.1835,7.0811h21.4153l-10.1863-7.0829  C28.8671,32.0287,28.4607,32.2622,28.3421,32.2622z"/><polygon points="40.858,18.1176 40.8587,18.117 40.8565,18.1187 "/><polygon points="39.037,18.7154 17.7191,18.7154 28.3432,26.5924 "/><polygon points="27.2877,31.659 17.382,24.8359 17.3764,38.5647 27.2976,31.666 "/></svg>
+<svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M29.3938 31.666L39.309 38.5604V24.8362L34.9235 27.8569L29.3938 31.666Z" fill="url(#paint0_radial_306_32)"/>
+<path d="M28.3472 3.92291C14.7476 3.92291 3.72217 14.9463 3.72217 28.5459C3.72217 42.1456 14.7476 53.1709 28.3472 53.1709C41.9458 53.1709 52.9712 42.1456 52.9712 28.5459C52.9712 14.9463 41.9458 3.92291 28.3472 3.92291ZM39.9141 39.7094V39.7101H16.7774H15.907C14.5623 39.7101 13.4619 38.6098 13.4619 37.265V20.5627C13.4619 19.2179 14.5622 18.1176 15.907 18.1176L15.9166 18.1248L15.907 18.117H40.8588C42.2035 18.117 43.3038 19.2172 43.3038 20.5619V21.2706L43.3045 21.2701L43.3038 21.2708L43.3078 37.2671C43.2494 39.0451 42.479 39.6797 39.9141 39.7094Z" fill="url(#paint1_radial_306_32)"/>
+<path d="M28.3421 32.2622C28.2225 32.2622 28.103 32.2263 28.0002 32.1549L27.8216 32.0305L17.6381 39.1116H39.0534L28.8671 32.0287C28.8671 32.0287 28.4607 32.2622 28.3421 32.2622Z" fill="url(#paint2_radial_306_32)"/>
+<path d="M40.858 18.1176L40.8587 18.117L40.8565 18.1187L40.858 18.1176Z" fill="url(#paint3_radial_306_32)"/>
+<path d="M39.037 18.7154H17.7191L28.3432 26.5924L39.037 18.7154Z" fill="url(#paint4_radial_306_32)"/>
+<path d="M27.2877 31.659L17.382 24.8359L17.3764 38.5647L27.2976 31.666L27.2877 31.659Z" fill="url(#paint5_radial_306_32)"/>
+<defs>
+<radialGradient id="paint0_radial_306_32" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(34.3514 31.6983) rotate(90) scale(6.8621 4.9576)">
+<stop offset="0.671875"/>
+<stop offset="1" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="paint1_radial_306_32" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(28.3467 28.5469) rotate(90) scale(24.624 24.6245)">
+<stop offset="0.671875"/>
+<stop offset="1" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="paint2_radial_306_32" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(28.3458 35.5701) rotate(90) scale(3.54145 10.7076)">
+<stop offset="0.671875"/>
+<stop offset="1" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="paint3_radial_306_32" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(40.8576 18.1179) rotate(90) scale(0.000849724 0.00110054)">
+<stop offset="0.671875"/>
+<stop offset="1" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="paint4_radial_306_32" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(28.3781 22.6539) rotate(90) scale(3.9385 10.6589)">
+<stop offset="0.671875"/>
+<stop offset="1" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="paint5_radial_306_32" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(22.337 31.7003) rotate(90) scale(6.8644 4.9606)">
+<stop offset="0.671875"/>
+<stop offset="1" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>

@@ -422,3 +422,10 @@ particlesJS("particles", {
     },
     retina_detect: true
 });
+
+// Alternative left and right fades for work containers
+workContainers = document.getElementsByClassName("work-container");
+for (let i = 0; i < workContainers.length; i++) {
+    let fadeToAdd = i % 2  == 0 ? "left-fade" : "right-fade";
+    workContainers[i].classList.add(fadeToAdd)
+}

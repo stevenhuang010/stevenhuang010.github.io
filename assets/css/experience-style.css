@@ -48,7 +48,6 @@ h3 {
     margin-left: 7%;
     padding-top: 20px;
     padding-bottom: 20px;
-    /* background: #f0f0f0; */
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -63,7 +62,7 @@ h3 {
     margin-right: 3%;
 }
 
-#zip-logo {
+#zip-logo, #cs170-logo, #cs61a-logo  {
     width: 12%;
     margin-left: 6%;
     margin-right: 6%;
@@ -179,7 +178,6 @@ remove the nav lines*/
 
 
 .project-container {
-    /* background: #f0f0f0; */
     width: 40%;
     margin-bottom: 60px;
     overflow: hidden;
@@ -354,7 +352,6 @@ remove the nav lines*/
     padding-bottom: 10px;
     padding-top: 5px;
     opacity: 0;
-    /* background: #f0f0f0; */
     border-radius: 12px;
 }
 
@@ -430,7 +427,7 @@ remove the nav lines*/
         padding-top: 20px;
     }
 
-    #zip-logo {
+    #zip-logo, #cs170-logo, #cs61a-logo {
         width: 30%;
     }
 

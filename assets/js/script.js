@@ -369,7 +369,7 @@ function removeHamburgerMenu() {
 
 particlesJS("particles-about", {
     particles: {
-        number: { value: 20, density: { enable: true, value_area: 800 } },
+        number: { value: 15, density: { enable: true, value_area: 800 } },
         color: { value: "#000000" },
         shape: {
         type: "circle",
@@ -396,7 +396,7 @@ particlesJS("particles-about", {
         },
         move: {
         enable: true,
-        speed: 6,
+        speed: 5,
         direction: "none",
         random: false,
         straight: false,
@@ -426,7 +426,7 @@ particlesJS("particles-about", {
 
 particlesJS("particles-experience", {
     particles: {
-        number: { value: 20, density: { enable: true, value_area: 800 } },
+        number: { value: 15, density: { enable: true, value_area: 800 } },
         color: { value: "#000000" },
         shape: {
         type: "circle",
@@ -453,7 +453,7 @@ particlesJS("particles-experience", {
         },
         move: {
         enable: true,
-        speed: 6,
+        speed: 5,
         direction: "none",
         random: false,
         straight: false,

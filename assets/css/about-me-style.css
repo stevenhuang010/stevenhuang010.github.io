@@ -2,6 +2,8 @@
     background: #f0f0f0;
     position: relative;
     overflow: hidden;
+    background-image: url("../img/about_graphics/noise.png");
+
 }
 
 .graphic-container {
@@ -59,7 +61,7 @@
     width: 6px;
     height: 250px;
     top: 331px;
-    background: white;
+    background: #f0f0f0;
     border-radius: 50%;
 }
 

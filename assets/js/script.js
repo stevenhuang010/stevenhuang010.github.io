@@ -291,7 +291,28 @@ function typeItAnimation() {
         afterComplete: function (step, instance) {
             instance.destroy();
         }
-    }).go();
+    })
+        .type("Hey, I'm Stven Hua")
+        .pause(350)
+        .delete(1)
+        .pause(350)
+        .delete(1)
+        .pause(50)
+        .delete(1)
+        .pause(50)
+        .delete(1)
+        .pause(50)
+        .delete(1)
+        .pause(50)
+        .delete(1)
+        .pause(50)
+        .delete(1)
+        .pause(50)
+        .type("even Huang. Let's connect.")
+        .pause(500)
+        .delete(1)
+        .type("!")
+        .go();
 }
 
 /*loading screen handling */

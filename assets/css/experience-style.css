@@ -724,3 +724,13 @@ remove the nav lines*/
         width: 48px;
     }
 }
+
+
+#particles-experience {
+    position: absolute;
+    bottom: 100px;
+    top: 0%;
+    height: 100%;
+    z-index: -1;
+    overflow-y: hidden;
+}

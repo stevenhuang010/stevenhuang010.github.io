@@ -396,7 +396,7 @@ particlesJS("particles-about", {
         },
         move: {
         enable: true,
-        speed: 6,
+        speed: 4,
         direction: "none",
         random: false,
         straight: false,
@@ -453,7 +453,7 @@ particlesJS("particles-experience", {
         },
         move: {
         enable: true,
-        speed: 6,
+        speed: 4,
         direction: "none",
         random: false,
         straight: false,

@@ -2,9 +2,8 @@
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: rgb(207,207,207);
-    background: linear-gradient(90deg, rgba(207,207,207,1) 10%, rgba(221,220,220,1) 20%, rgba(254,254,254,1) 50%, rgba(206,206,206,1) 80%, rgba(191,191,191,1) 90%);
     z-index: 1000;
+    background-image: url("../img/about_graphics/noise.png");
 }
 
 .hide {
@@ -22,7 +21,6 @@
     position: fixed;
     top: 0%;
     left: 0%;
-
     animation-name: closing;
     animation-duration: 0s;
     animation-direction: forwards;

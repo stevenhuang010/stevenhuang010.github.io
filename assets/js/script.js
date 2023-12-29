@@ -396,7 +396,7 @@ particlesJS("particles-about", {
         },
         move: {
         enable: true,
-        speed: 4,
+        speed: 6,
         direction: "none",
         random: false,
         straight: false,
@@ -409,7 +409,7 @@ particlesJS("particles-about", {
         detect_on: "canvas",
         events: {
         onhover: { enable: true, mode: "repulse" },
-        onclick: { enable: true, mode: "push" },
+        onclick: { enable: false, mode: "push" },
         resize: true
         },
         modes: {
@@ -453,7 +453,7 @@ particlesJS("particles-experience", {
         },
         move: {
         enable: true,
-        speed: 4,
+        speed: 6,
         direction: "none",
         random: false,
         straight: false,
@@ -466,7 +466,7 @@ particlesJS("particles-experience", {
         detect_on: "canvas",
         events: {
         onhover: { enable: true, mode: "repulse" },
-        onclick: { enable: true, mode: "push" },
+        onclick: { enable: false, mode: "push" },
         resize: true
         },
         modes: {

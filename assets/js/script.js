@@ -286,7 +286,7 @@ function bottomAbsoluteYDistFromTop(object) {
 //for homepage text
 function typeItAnimation() {
     new TypeIt("#hero-text", {
-        speed: 40,
+        speed: 30,
         loop: false,
         afterComplete: function (step, instance) {
             instance.destroy();

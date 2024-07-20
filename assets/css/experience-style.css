@@ -64,7 +64,7 @@ h3 {
     margin-right: 3%;
 }
 
-#zip-logo, #cs170-logo, #cs61a-logo  {
+.smaller-logo {
     width: 12%;
     margin-left: 6%;
     margin-right: 6%;
@@ -434,7 +434,7 @@ remove the nav lines*/
         padding-top: 20px;
     }
 
-    #zip-logo, #cs170-logo, #cs61a-logo {
+    .smaller-logo {
         width: 30%;
     }
 

@@ -129,28 +129,18 @@
                     <h6>May 2024 - Aug. 2024</h6>
                     <div class = "job-responsibilities">
                         <p>
-                            
+                            Improved the reliability and scalability of Presence, ensuring Notion reliably and efficiently shows who is on a page and where they are.
+                            Utilized Typescript and Datadog to measure the delivery rate of Presence notifications, which power all real-time Presence updates.
+                            Increased the delivery reliability of Presence notifications to 99.9% via retransmission of dropped notifications.
+                            Refined the client-side and server-side protocols for logging page exits, ensuring that Presence data is robust to connection disruption.
+                            Developed a Lua script that stores Presence data more compactly in Redis, reducing maximum Presence notification size by 99% and resolving customer scalability issues related to oversized notifications.
+                            Implemented error handling for externally linked images, using React to display error components when external links are unavailable.
+                            Built support for simultaneous foreground and background text colors, revamping the text color picker to accommodate this feature.
+
                         </p>
                     </div>
                 </div>
             </div> -->
-            <div class = "work-container">
-                <a href = "https://www.kleinerperkins.com/" target = "_blank">
-                    <img src="assets/img/link_icon.svg" class = "link-icon">
-                </a>
-                <img src= "assets/img/work_experience/kp.png" class = "company-logo">
-                <div class = "logo-description-dividing-line"></div>
-                <div class = "description-section">
-                    <h4>Engineering Fellow</h4>
-                    <h5>Kleiner Perkins</h5>
-                    <h6>May 2024 - Aug. 2024</h6>
-                    <div class = "job-responsibilities">
-                        <p>
-                            
-                        </p>
-                    </div>
-                </div>
-            </div>
             <div class = "work-container">
                 <a href = "https://ziphq.com/" target = "_blank">
                     <img src="assets/img/link_icon.svg" class = "link-icon">
@@ -163,12 +153,11 @@
                     <h6>June 2023 - Aug. 2023</h6>
                     <div class = "job-responsibilities">
                         <p>
-                            Automated the creation and management of cloud-hosted development environments for 70+ engineers using Bash Scripting, SSH tunneling, 
-                            and AWS (EC2, VPC, Cloudwatch). Launched EC2 instances with pre-installed dependencies directly in Zip's VPC, reducing developer setup 
-                            time by 95% and allowing engineers to seamlessly access the VPC's stateful services (ElasticSearch Clusters, MySQL DB). Implemented a 
-                            cost-saving Cloudwatch alarm system that automatically stops EC2 instances with low CPU utilization. Reduced ElasticSearch reindex time, 
-                            using database sharding to split up work and parallel Kubernetes pods to process work efficiently. Leveraged job duration logs stored 
-                            in AWS S3 to dynamically rebalance job assignments for parallel workers, distributing work evenly.
+                            Automated the creation and management of cloud-hosted development environments (devboxes) for 200+ engineers. 
+                            Utilized Bash Scripting, SSH tunneling, and AWS (EC2, Cloudwatch, OpenSearch) to launch devboxes pre-configured with Zip’s developer dependencies, reducing setup time by 95% and becoming the primary development setup at Zip.
+                            Implemented a cost-saving Cloudwatch alarm system that automatically stops devboxes with low CPU utilization.
+                            Reduced OpenSearch reindex time by 40%, using database sharding to split up work and Kubernetes pods to parallelize reindexing.
+                            Leveraged job duration logs stored in AWS S3 to dynamically rebalance job assignments for parallel workers, distributing work evenly.
                         </p>
                     </div>
                 </div>
@@ -185,14 +174,9 @@
                     <h6>May 2022 - Aug. 2022</h6>
                     <div class = "job-responsibilities">
                         <p>
-                            Utilized Swift, SwiftUI, and XCTest 
-                            to develop the Consumer App’s analytics events module (tracks user actions and settings) 
-                            and network requests module (stores all of the backend’s network requests). Leveraged Swift 
-                            data bindings and Combine publishers to implement modules with an MVVM architecture, 
-                            separating domain logic from presentation logic and improving code modularization.
-                            Utilized the XCTest framework to increase test coverage in the Consumer App, 
-                            creating unit and snapshot tests for the app’s restaurant view-models, commands, 
-                            and displays.
+                            Developed the Consumer App’s analytics events module (tracks user actions) and network requests module (stores all backend network requests) using Swift, SwiftUI, and XCTest.
+                            Leveraged Swift data bindings and Combine publishers to develop modules with an MVVM architecture, improving code modularity.
+                            Created unit and snapshot tests with XCTest for restaurant view-models and displays, increasing the Consumer App’s test coverage.
                         </p>
                     </div>
                 </div>
@@ -209,10 +193,9 @@
                     <h6>Aug. 2021 - Dec. 2021</h6>
                     <div class = "job-responsibilities">
                         <p>
-                            Contracted by Aurora Solar through Berkeley Codebase to develop a customer admin portal using React.js, Blueprint.js, Docker, and Makefiles. 
-                            Utilized React hooks, Blueprint components, and the Fetch API to build a responsive tenant space with full backend integration, allowing users 
-                            to edit, create, and search for tenants. Designed Dockerfiles and Makefiles to containerize the admin 
-                            app and automate Docker image builds across different environments, expediting web app deployment.
+                            Contracted by Aurora Solar through Berkeley Codebase to develop an admin portal using React, Blueprint.js, Docker, and Makefiles.
+                            Utilized React hooks and the Fetch API to build a backend-integrated tenant space, allowing admins to search for and modify tenants.
+                            Designed Dockerfiles and Makefiles to containerize the admin app and automate Docker image builds across different environments.
                         </p>
                     </div>
                 </div>
@@ -229,12 +212,25 @@
                     <h6>Feb. 2021 - May 2021</h6>
                     <div class = "job-responsibilities">
                         <p>
-                            Contracted by Postman through Berkeley Codebase to create a suite of public cloud integrations, 
-                            enabling Postman users to leverage Azure and AWS services in their APIs.
-                            Chained HTTP requests to Azure and AWS service endpoints to develop a website management 
-                            integration, allowing users to manage API Schema, design authentication flows, and create blobs in 
-                            the cloud directly from Postman. Wrote test scripts in Chai.js to parse API responses from 
-                            various Azure services (API Management, Blob Storage, AD B2C, Repos) and AWS services (S3, Cloudwatch).
+                            Contracted by Postman through Berkeley Codebase to create a suite of public cloud integrations, enabling Postman users to leverage Azure and AWS services in their APIs (15k+ views, 350+ forks).
+                            Chained HTTP requests to Azure and AWS endpoints to develop a website management integration, allowing users to manage API Schema, design authentication flows, and create blobs in the cloud directly from Postman.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class = "work-container">
+                <a href = "https://www.kleinerperkins.com/" target = "_blank">
+                    <img src="assets/img/link_icon.svg" class = "link-icon">
+                </a>
+                <img src= "assets/img/work_experience/kp.png" class = "company-logo">
+                <div class = "logo-description-dividing-line"></div>
+                <div class = "description-section">
+                    <h4>Engineering Fellow</h4>
+                    <h5>Kleiner Perkins</h5>
+                    <h6>May 2024 - Aug. 2024</h6>
+                    <div class = "job-responsibilities">
+                        <p>
+                            
                         </p>
                     </div>
                 </div>

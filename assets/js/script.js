@@ -308,10 +308,7 @@ function typeItAnimation() {
         .pause(50)
         .delete(1)
         .pause(50)
-        .type("even Huang. Let's connect.")
-        .pause(500)
-        .delete(1)
-        .type("!")
+        .type("even Huang. Let's connect!")
         .go();
 }
 
